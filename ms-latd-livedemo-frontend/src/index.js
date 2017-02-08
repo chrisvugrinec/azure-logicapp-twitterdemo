@@ -17,7 +17,7 @@ subscriber.on("message", function(channel, message) {
 });
 
 http.listen(8080, function(){
-  app.use(serveStatic(__dirname, {'index': ['images/logo-solvinity.png']}));
+  app.use(serveStatic(__dirname, {'index': ['images/thumbs.png']}));
   app.use(serveStatic(__dirname, {'index': ['scripts/jquery-1.10.2.min.js']}));
   console.log('REDIS URL : '+process.env.REDIS_URL);
   console.log('REDIS TOPIC: '+process.env.REDIS_TOPIC);
